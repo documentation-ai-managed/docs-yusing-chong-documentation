@@ -1,0 +1,141 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to the GQ digital platform, including new features and content enhancements.
+---
+
+## Overview
+
+Stay informed about enhancements to the GQ digital platform. You receive new article series, improved performance, and bug fixes that enhance your reading experience. Check this page regularly for the latest version history.
+
+<Columns cols={3}>
+  <Card title="Latest Release" icon="zap" href="#v2-1-0">
+    Discover what's new in v2.1.0.
+  </Card>
+  <Card title="All Releases" icon="list" href="#">
+    Browse complete version history.
+  </Card>
+  <Card title="Upgrade Guide" icon="settings" href="#">
+    Learn how to adapt to changes.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Subscribe to our RSS feed at `/rss/changelog.xml` to get notified of new releases automatically.
+</Callout>
+
+## Recent Updates
+
+Review the most significant releases below. Each version includes detailed changelogs with new features, improvements, and fixes.
+
+<Update label="2024-10-15" description="v2.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added "Style Essentials" article series with weekly grooming tips and outfit recommendations.
+- Introduced personalized reading lists based on your style preferences and past reads.
+
+## Improvements
+
+- Enhanced search functionality to include article series filters and author spotlights.
+- Optimized image loading for a `<20%` faster page render on mobile devices.
+
+## Bug Fixes
+
+- Fixed infinite scroll issue in article feeds.
+- Resolved authentication glitches during dark mode toggles.
+
+</Update>
+
+<Update label="2024-09-20" description="v2.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched "GQ Fitness Challenge" interactive series with progress trackers and workout videos.
+- Integrated social sharing for article highlights directly from reading view.
+
+## Breaking Changes
+
+- Updated article metadata schema; migrate your integrations to the new format.
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Old format
+const article = { id: '123', title: 'Style Guide' };
+
+// New format (v2.0+)
+const article = {
+  id: '123',
+  title: 'Style Guide',
+  series: 'Style Essentials',
+  publishedAt: '2024-10-01T10:00:00Z'
+};
+```
+```python
+# Old format
+article = {"id": "123", "title": "Style Guide"}
+
+# New format (v2.0+)
+article = {
+    "id": "123",
+    "title": "Style Guide",
+    "series": "Style Essentials",
+    "publishedAt": "2024-10-01T10:00:00Z"
+}
+```
+</CodeGroup>
+
+## Bug Fixes
+
+- Corrected subscription renewal prompts.
+- Patched cross-browser compatibility for interactive quizzes.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.5.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Boosted platform performance with CDN upgrades, reducing load times by `>30%`.
+- Added accessibility improvements like screen reader support for new article series.
+
+## Bug Fixes
+
+- Eliminated duplicate content in recommendation engines.
+- Fixed navigation bar overlap on landscape tablets.
+
+</Update>
+
+## How to Stay Updated
+
+Follow these steps to ensure you always have the latest platform features.
+
+<Steps>
+  <Step title="Enable Notifications" icon="bell">
+    Turn on browser notifications in your account settings.
+  </Step>
+  <Step title="Check RSS" icon="rss">
+    Add `/rss/changelog.xml` to your feed reader.
+  </Step>
+  <Step title="Review Integrations" icon="code">
+    Test your API calls against the latest schema changes.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Readers" icon="book-open">
+    Focus on new series like "Style Essentials" for fresh content.
+  </Tab>
+  <Tab title="Developers" icon="code">
+    Review breaking changes in v2.0.0 and update your code.
+  </Tab>
+</Tabs>
+
+<Expandable title="Full Migration Guide" default-open="false">
+
+If you integrate with GQ APIs, follow these guidelines:
+
+1. Update to the new article schema shown above.
+2. Test endpoints at `https://api.gq.com/v2/articles`.
+3. Use `YOUR_API_KEY` for authentication.
+
+</Expandable>

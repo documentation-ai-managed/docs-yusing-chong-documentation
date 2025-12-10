@@ -1,0 +1,107 @@
+---
+title: Frequently Asked Questions
+description: Find answers to common questions about using GQ's platform, subscriptions, and content access to enhance your experience.
+---
+
+## Subscription Management
+
+Manage your GQ subscription easily through our platform. You control everything from your account dashboard, including upgrades, cancellations, and billing details.
+
+<Columns cols={3}>
+  <Card title="Upgrade Plan" icon="arrow-up" href="/account/upgrade">
+    Switch to premium for exclusive content and ad-free reading.
+  </Card>
+  <Card title="Update Payment" icon="credit-card" href="/account/billing">
+    Add or change your payment method securely.
+  </Card>
+  <Card title="Cancel Subscription" icon="x" href="/account/cancel">
+    End your subscription anytime with no penalties.
+  </Card>
+</Columns>
+
+<ExpandableGroup>
+  <Expandable title="How do I subscribe to GQ digital?">
+    Visit the subscription page and select your plan. Enter your email and payment details to start immediately. You receive instant access to all digital issues.
+  </Expandable>
+  <Expandable title="What payment methods do you accept?">
+    We support major credit cards like Visa and Mastercard, PayPal, and Apple Pay. Update methods anytime in your account settings.
+  </Expandable>
+  <Expandable title="Can I gift a subscription?">
+    Yes, choose the gift option during checkout. Enter the recipient's email, and they get a personalized welcome message with access instructions.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="tip">
+  Save receipts in your email or account history for tax or refund purposes.
+</Callout>
+
+## Troubleshooting Access Issues
+
+Encounter login problems? Follow these steps to resolve common issues quickly.
+
+<Steps>
+  <Step title="Clear Browser Cache" icon="trash-2">
+    Open your browser settings and clear cache and cookies for the last 30 days. Restart the browser and try logging in again.
+  </Step>
+  <Step title="Reset Password">
+    Click "Forgot Password" on the login screen. Enter your email to receive a reset link valid for 1 hour.
+  </Step>
+  <Step title="Check Device Time">
+    Ensure your device clock matches your time zone. Incorrect time prevents secure connections.
+  </Step>
+</Steps>
+
+For platform-specific fixes:
+
+<Tabs>
+  <Tab title="Web Browser" icon="globe">
+    Use the latest Chrome or Safari version. Disable ad blockers temporarily, as they may block our scripts.
+
+    ```javascript
+    // Check console for errors (F12 > Console)
+    console.log("GQ Platform Status: Active");
+    ```
+  </Tab>
+  <Tab title="iOS App" icon="apple">
+    Force quit the app, then relaunch. Update to the newest version via App Store.
+  </Tab>
+  <Tab title="Android App" icon="android">
+    Clear app cache in Settings > Apps > GQ > Storage. Reinstall if issues persist.
+  </Tab>
+</Tabs>
+
+<Callout kind="alert">
+  If problems continue, contact support at support@gq.com with your account email and device details.
+</Callout>
+
+## Content Update Frequency
+
+GQ publishes fresh content daily to keep you informed on style, culture, and news.
+
+- **Daily**: Style tips, grooming advice, entertainment news
+- **Weekly**: In-depth features, sports analysis
+- **Monthly**: Full digital magazine issues
+
+New articles appear by 8 AM ET. Check the homepage or subscribe to email alerts for notifications.
+
+<CodeGroup tabs="Email Setup, RSS Feed">
+  ```yaml
+  # Add to your email client filters
+  From: newsletters@gq.com
+  Subject: contains "New GQ Content"
+  Action: Highlight
+  ```
+  ```xml
+  <!-- RSS Feed URL for GQ Updates -->
+  <rss version="2.0">
+    <channel>
+      <title>GQ Latest Articles</title>
+      <link>https://www.gq.com/rss</link>
+    </channel>
+  </rss>
+  ```
+</CodeGroup>
+
+<Expandable title="How often does the magazine app update?">
+  App content syncs automatically with new issues on the 1st of each month. Manual refresh available in settings.
+</Expandable>

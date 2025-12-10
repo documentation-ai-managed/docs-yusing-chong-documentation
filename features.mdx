@@ -1,0 +1,103 @@
+---
+title: GQ Features and Capabilities
+description: Explore the core features of GQ's digital platform, from award-winning articles to personalized recommendations on men's lifestyle topics.
+---
+
+## Overview
+
+GQ's digital platform delivers premium content on men's style, culture, and lifestyle. You access in-depth articles, expert advice, and interactive tools tailored to your interests. Key features include style and grooming guides, comprehensive coverage of politics, sports, and entertainment, plus engaging elements like quizzes and newsletters.
+
+<Columns cols={3}>
+  <Card title="Style & Grooming" icon="zap" href="/docs/style">
+    Get personalized tips on fashion trends and skincare routines from top stylists.
+  </Card>
+  <Card title="News Coverage" icon="trending-up" href="/docs/news">
+    Stay informed with award-winning journalism on politics, sports, and entertainment.
+  </Card>
+  <Card title="Interactive Tools" icon="play-circle" href="/docs/interactive">
+    Engage with quizzes, newsletters, and recommendations designed for you.
+  </Card>
+</Columns>
+
+## Style and Grooming Advice
+
+Dive into expert-curated content that elevates your wardrobe and routine. GQ provides step-by-step guides, product recommendations, and seasonal trends.
+
+<Tabs>
+  <Tab title="Fashion Trends" icon="trending-up">
+    Discover the latest suits, sneakers, and accessories with photo galleries and shoppable links.
+  </Tab>
+  <Tab title="Grooming Essentials" icon="droplets">
+    Learn barber-approved techniques for haircuts, shaving, and skincare.
+  </Tab>
+  <Tab title="Fitness Routines" icon="dumbbell">
+    Follow workout plans from celebrity trainers with video demonstrations.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Save articles to your profile for offline reading and personalized feeds.
+</Callout>
+
+## News and Entertainment Coverage
+
+GQ covers breaking stories in politics, major sports events, and Hollywood premieres. You find unbiased analysis, exclusive interviews, and live updates.
+
+| Category     | Highlights                          | Frequency    |
+|--------------|-------------------------------------|--------------|
+| Politics    | Election analysis, policy breakdowns | Daily       |
+| Sports      | NBA finals, NFL drafts, Olympics    | Live + Weekly |
+| Entertainment | Oscars coverage, celebrity profiles | Event-driven |
+
+## Interactive Elements
+
+Engage actively with GQ's platform through quizzes and newsletters.
+
+<Steps>
+  <Step title="Take a Style Quiz" icon="help-circle">
+    Answer questions about your preferences to receive custom outfit recommendations.
+  </Step>
+  <Step title="Subscribe to Newsletter" icon="mail">
+    Select topics like grooming or sports for weekly digests in your inbox.
+  </Step>
+  <Step title="Share Content" icon="share-2">
+    Post articles to social media or save to collections for later.
+  </Step>
+</Steps>
+
+Integrate GQ content into your apps with simple embeds.
+
+<CodeGroup tabs="JavaScript,HTML">
+  ```javascript
+  const embedGQArticle = (articleId) => {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.gq.com/embed/article/${articleId}`;
+    iframe.width = '100%';
+    iframe.height = '600';
+    document.body.appendChild(iframe);
+  };
+  embedGQArticle('mens-style-guide-2024');
+  ```
+  ```html
+  <iframe
+    src="https://www.gq.com/embed/article/mens-style-guide-2024"
+    width="100%"
+    height="600"
+    frameborder="0">
+  </iframe>
+  ```
+</CodeGroup>
+
+<Expandable title="Advanced Personalization" default-open="false">
+
+Customize your experience further with API access.
+
+<ParamField path="user/preferences" param-type="object" required="true">
+  Set topics like `{style: true, sports: true}`.
+</ParamField>
+
+<ResponseField name="recommendations" field-type="array" required="true">
+  Array of tailored article objects.
+</ResponseField>
+
+</Expandable>

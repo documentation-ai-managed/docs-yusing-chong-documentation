@@ -1,0 +1,101 @@
+---
+title: Welcome to GQ
+description: Discover the world of GQ, the premier men's magazine offering definitive coverage of style, culture, politics, sports, and entertainment for over 50 years.
+---
+
+## Overview
+
+Welcome to GQ, the definitive guide to men's style and culture. For over 50 years, GQ has shaped how men dress, think, and live. You find expert advice on fashion, grooming, fitness, and more, alongside sharp takes on politics, sports, and entertainment. Explore award-winning photography, top writers, and exclusive stories that reach millions monthly.
+
+Dive into our digital platform to access timeless content and the latest updates. Whether you seek outfit inspiration or cultural insights, GQ delivers it all in one place.
+
+<Columns cols={3}>
+  <Card title="Style Essentials" icon="trending-up" href="/style">
+    Master modern menswear with trend reports and shopping guides.
+  </Card>
+  <Card title="Grooming Tips" icon="spray" href="/grooming">
+    Elevate your routine with product reviews and expert routines.
+  </Card>
+  <Card title="Fitness Guide" icon="dumbbell" href="/fitness">
+    Build strength and stamina through proven workouts.
+  </Card>
+</Columns>
+
+## Our History and Mission
+
+<Expandable title="GQ's 50+ Years of Excellence" default-open="true">
+  Founded in 1957 as Gentleman's Quarterly, GQ evolved into the cultural authority it is today. You benefit from our mission: empower men with style, substance, and sophistication. From iconic covers to investigative journalism, we cover what matters.
+</Expandable>
+
+<Callout kind="info">
+  GQ reaches over 10 million readers monthly, blending print legacy with digital innovation.
+</Callout>
+
+## Key Content Areas
+
+Explore core pillars through these focused sections. Switch between them to tailor your experience.
+
+<Tabs>
+  <Tab title="Style" icon="shirt">
+    Discover seasonal trends, designer spotlights, and styling hacks. Build wardrobes that last.
+
+    ```javascript
+    // Example: Fetch latest style articles via RSS
+    fetch('https://www.gq.com/rss/style.xml')
+      .then(response => response.text())
+      .then(data => console.log('Latest trends:', data));
+    ```
+  </Tab>
+  <Tab title="Grooming" icon="spray">
+    Get routines for hair, skin, and beard care. Reviews cover top products from beard oils to serums.
+
+    <CodeGroup tabs="JavaScript,Python">
+    ```javascript
+    // Subscribe to grooming updates
+    const subscribe = async (email) => {
+      await fetch('/api/grooming-subscribe', {
+        method: 'POST',
+        body: JSON.stringify({ email })
+      });
+    };
+    ```
+    ```python
+    # Python example for grooming API
+    import requests
+    response = requests.post('https://api.gq.com/grooming-subscribe', json={'email': 'user@example.com'})
+    ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Fitness" icon="dumbbell">
+    Access workouts, nutrition plans, and trainer interviews. Track progress with our tools.
+
+    1. Select a workout category.
+    2. Follow video guides.
+    3. Log your sessions.
+  </Tab>
+</Tabs>
+
+## Navigate the Digital Platform
+
+Get started quickly with these steps. Our intuitive design puts content at your fingertips.
+
+<Steps>
+  <Step title="Browse Categories" icon="search">
+    Use the top navigation to jump to Style, Grooming, Fitness, Politics, Sports, or Entertainment.
+  </Step>
+  <Step title="Search and Filter" icon="filter">
+    Enter keywords in the search bar. Filter by date, author, or topic for precise results.
+  </Step>
+  <Step title="Save and Subscribe" icon="bookmark">
+    Bookmark articles or subscribe for newsletters. Enable notifications for breaking stories.
+  </Step>
+  <Step title="Personalize Your Feed" icon="settings">
+    Go to profile settings to customize recommendations based on your reads.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Download the GQ app for offline reading and push alerts on new issues.
+</Callout>
+
+Stay ahead with GQ—your source for elevated living. Explore now and elevate your style.
